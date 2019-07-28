@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  created_at: 2019-07-06 17:25:13
+  is_sent: false
+  is_received: false
+  pal: one
+
+two:
+  created_at: 2019-07-06 17:25:13
+  is_sent: false
+  is_received: false
+  pal: two

@@ -1,0 +1,37 @@
+<%= form_with(model: payload, local: true) do |form| %>
+  <% if payload.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(payload.errors.count, "error") %> prohibited this payload from being saved:</h2>
+
+      <ul>
+      <% payload.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :created_at %>
+    <%= form.datetime_select :created_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_sent %>
+    <%= form.check_box :is_sent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_received %>
+    <%= form.check_box :is_received %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pal_id %>
+    <%= form.text_field :pal_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

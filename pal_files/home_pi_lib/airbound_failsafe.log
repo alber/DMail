@@ -1,0 +1,17 @@
+
+
+ * * * 
+
+Sat 27 Jul 2019 08:12:38 PM EDT
+
+TRIED FOLLOWING COMMAND BUT FAILED: 
+
+curl -s -o /dev/null -w "%{http_code}" -d "_method=patch" -d "message[is_received]=1" -d "message[jump]=77" -d "commit=Update Message"-H "Content-Type: application/x-www-form-urlencoded" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3" http://192.168.199.1:3000/messages/1564199188419.json
+
+ * * * 
+
+Sat 27 Jul 2019 09:06:52 PM EDT
+
+TRIED FOLLOWING COMMAND BUT FAILED: 
+
+curl -s -o /dev/null -w "%{http_code}" -d "_method=patch" -d "message[is_received]=1" -d "message[jump]=2" -d "commit=Update Message"-H "Content-Type: application/x-www-form-urlencoded" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3" http://192.168.199.1:3000/messages/  1564199152179.json

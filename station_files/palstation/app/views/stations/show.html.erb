@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @station.name %>
+</p>
+
+<p>
+  <strong>Admin:</strong>
+  <%= @station.admin %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @station.location %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @station.lat %>
+</p>
+
+<p>
+  <strong>Long:</strong>
+  <%= @station.long %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @station.parent_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @station.status %>
+</p>
+
+<p>
+  <strong>Service Station Away ID:</strong>
+  <%= @station.service_away_id %>
+</p>
+
+<p>
+  <strong>Service Station Home ID:</strong>
+  <%= @station.service_home_id %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @station.total %>
+</p>
+
+<p>
+  <strong>Is docked:</strong>
+  <%= @station.is_docked %>
+</p>
+
+<p>
+  <strong>Docked:</strong>
+  <%= @station.docked_id %>
+</p>
+
+<p>
+  <strong>Tier:</strong>
+  <%= @station.tier %>
+</p>
+
+<p>
+  <strong>Current weatherscore:</strong>
+  <%= @station.current_weatherscore %>
+</p>
+
+<p>
+  <strong>Is me:</strong>
+  <%= @station.is_me %>
+</p>
+
+<%= link_to 'Edit', edit_station_path(@station) %> |
+<%= link_to 'Back', stations_path %>

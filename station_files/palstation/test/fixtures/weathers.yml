@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  station: one
+  score: 1.5
+  description: MyText
+  updated_at: 2019-07-06 16:45:09
+
+two:
+  station: two
+  score: 1.5
+  description: MyText
+  updated_at: 2019-07-06 16:45:09

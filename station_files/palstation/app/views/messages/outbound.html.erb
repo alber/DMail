@@ -1,0 +1,3 @@
+<% @messages.each do |message| %>
+curl -s -o /dev/null -w "%{http_code}" -d "message[id]=<%= message.id  %>" -d "message[author]=<%= message.author %>" -d "message[format]=<%= message.format %>" -d "message[body]='<%= message.body %>'" -d "message[destination_id]=<%= message.destination_id  %>" -d "message[final_destination_id]=<%= message.final_destination_id %>" -d "message[jump]=<%= message.jump %>" -d "message[is_sent]=<%= message.is_sent %>" -d "message[is_received]=<%= message.is_received %>" -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3' http://localhost:3000/messages.json
+<% end %>

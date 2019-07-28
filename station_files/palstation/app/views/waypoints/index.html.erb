@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Waypoints</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lat</th>
+      <th>Long</th>
+      <th>Step</th>
+      <th>Flightplan</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @waypoints.each do |waypoint| %>
+      <tr>
+        <td><%= waypoint.lat %></td>
+        <td><%= waypoint.long %></td>
+        <td><%= waypoint.step %></td>
+        <td><%= waypoint.flightplan %></td>
+        <td><%= link_to 'Show', waypoint %></td>
+        <td><%= link_to 'Edit', edit_waypoint_path(waypoint) %></td>
+        <td><%= link_to 'Destroy', waypoint, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Waypoint', new_waypoint_path %>

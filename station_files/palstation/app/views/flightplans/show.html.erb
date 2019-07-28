@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @flightplan.updated_at %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @flightplan.updated_by %>
+</p>
+
+<p>
+  <strong>Updated by me:</strong>
+  <%= @flightplan.updated_by_me %>
+</p>
+
+<p>
+  <strong>Waypoint count:</strong>
+  <%= @flightplan.waypoint_count %>
+</p>
+
+<p>
+  <strong>Last waypoint:</strong>
+  <%= @flightplan.last_waypoint %>
+</p>
+
+<p>
+  <strong>Step waypoint:</strong>
+  <%= @flightplan.step_waypoint %>
+</p>
+
+<%= link_to 'Edit', edit_flightplan_path(@flightplan) %> |
+<%= link_to 'Back', flightplans_path %>

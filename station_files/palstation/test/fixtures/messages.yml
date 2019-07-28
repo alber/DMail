@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  author: 1
+  authored: 2019-07-21 20:31:02
+  authored_at: 1
+  format: MyString
+  body: MyText
+  data: 
+  received_at: 1
+  received_by: 1
+  received_by_me: MyString
+  is_received: false
+  is_sent: false
+  jump: 1
+  destination_id: 1
+  final_destination_id: 1
+  manifest: MyText
+
+two:
+  author: 1
+  authored: 2019-07-21 20:31:02
+  authored_at: 1
+  format: MyString
+  body: MyText
+  data: 
+  received_at: 1
+  received_by: 1
+  received_by_me: MyString
+  is_received: false
+  is_sent: false
+  jump: 1
+  destination_id: 1
+  final_destination_id: 1
+  manifest: MyText

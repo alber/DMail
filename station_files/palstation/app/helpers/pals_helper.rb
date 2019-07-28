@@ -1,0 +1,2 @@
+module PalsHelper
+end

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  updated_at: 2019-07-06 17:26:32
+  updated_by: 1
+  updated_by_me: MyString
+  waypoint_count: 1
+  last_waypoint: 1
+  step_waypoint: 1
+
+two:
+  updated_at: 2019-07-06 17:26:32
+  updated_by: 1
+  updated_by_me: MyString
+  waypoint_count: 1
+  last_waypoint: 1
+  step_waypoint: 1

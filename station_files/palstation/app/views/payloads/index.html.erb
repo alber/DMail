@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Payloads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Created at</th>
+      <th>Is sent</th>
+      <th>Is received</th>
+      <th>Pal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @payloads.each do |payload| %>
+      <tr>
+        <td><%= payload.created_at %></td>
+        <td><%= payload.is_sent %></td>
+        <td><%= payload.is_received %></td>
+        <td><%= payload.pal %></td>
+        <td><%= link_to 'Show', payload %></td>
+        <td><%= link_to 'Edit', edit_payload_path(payload) %></td>
+        <td><%= link_to 'Destroy', payload, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Payload', new_payload_path %>

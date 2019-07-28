@@ -1,0 +1,92 @@
+<%= form_with(model: station, local: true) do |form| %>
+  <% if station.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(station.errors.count, "error") %> prohibited this station from being saved:</h2>
+
+      <ul>
+      <% station.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :admin %>
+    <%= form.text_field :admin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lat %>
+    <%= form.text_field :lat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :long %>
+    <%= form.text_field :long %>
+  </div>
+
+  <div class="field">
+    <%= form.label :parent_id %>
+    <%= form.number_field :parent_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+ <div class="field">
+    <%= form.label :service_away_id %>
+    <%= form.number_field :service_away_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :service_home_id %>
+    <%= form.number_field :service_home_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total %>
+    <%= form.number_field :total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_docked %>
+    <%= form.check_box :is_docked %>
+  </div>
+
+  <div class="field">
+    <%= form.label :docked_id %>
+    <%= form.number_field :docked_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tier %>
+    <%= form.number_field :tier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :current_weatherscore %>
+    <%= form.number_field :current_weatherscore %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_me %>
+    <%= form.check_box :is_me %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

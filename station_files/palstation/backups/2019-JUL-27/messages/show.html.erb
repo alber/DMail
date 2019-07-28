@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>ID:</strong>
+  <%= @message.id %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @message.author %>
+</p>
+
+<p>
+  <strong>Authored:</strong>
+  <%= @message.authored %>
+</p>
+
+<p>
+  <strong>Authored at:</strong>
+  <%= @message.authored_at %>
+</p>
+
+<p>
+  <strong>Format:</strong>
+  <%= @message.format %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @message.body %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @message.data %>
+</p>
+
+<p>
+  <strong>Received at:</strong>
+  <%= @message.received_at %>
+</p>
+
+<p>
+  <strong>Received by:</strong>
+  <%= @message.received_by %>
+</p>
+
+<p>
+  <strong>Received by me:</strong>
+  <%= @message.received_by_me %>
+</p>
+
+<p>
+  <strong>Is received:</strong>
+  <%= @message.is_received %>
+</p>
+
+<p>
+  <strong>Is sent:</strong>
+  <%= @message.is_sent %>
+</p>
+
+<p>
+  <strong>Jump:</strong>
+  <%= @message.jump %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @message.destination_id %>
+</p>
+
+<p>
+  <strong>Final destination:</strong>
+  <%= @message.final_destination_id %>
+</p>
+
+<p>
+  <strong>Manifest:</strong>
+  <%= @message.manifest %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>

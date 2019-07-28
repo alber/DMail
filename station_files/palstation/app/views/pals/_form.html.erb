@@ -1,0 +1,47 @@
+<%= form_with(model: pal, local: true) do |form| %>
+  <% if pal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pal.errors.count, "error") %> prohibited this pal from being saved:</h2>
+
+      <ul>
+      <% pal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lat %>
+    <%= form.text_field :lat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :long %>
+    <%= form.text_field :long %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payload_id %>
+    <%= form.text_field :payload_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flightplan_id %>
+    <%= form.text_field :flightplan_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

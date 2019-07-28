@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @payload.created_at %>
+</p>
+
+<p>
+  <strong>Is sent:</strong>
+  <%= @payload.is_sent %>
+</p>
+
+<p>
+  <strong>Is received:</strong>
+  <%= @payload.is_received %>
+</p>
+
+<p>
+  <strong>Pal:</strong>
+  <%= @payload.pal %>
+</p>
+
+<%= link_to 'Edit', edit_payload_path(@payload) %> |
+<%= link_to 'Back', payloads_path %>

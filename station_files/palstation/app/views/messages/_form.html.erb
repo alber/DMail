@@ -1,0 +1,92 @@
+<%= form_with(model: message, local: true) do |form| %>
+  <% if message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(message.errors.count, "error") %> prohibited this message from being saved:</h2>
+
+      <ul>
+      <% message.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :author %>
+    <%= form.number_field :author %>
+  </div>
+
+  <div class="field">
+    <%= form.label :authored %>
+    <%= form.datetime_select :authored %>
+  </div>
+
+  <div class="field">
+    <%= form.label :authored_at %>
+    <%= form.number_field :authored_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :format %>
+    <%= form.text_field :format %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.text_field :data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :received_at %>
+    <%= form.number_field :received_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :received_by %>
+    <%= form.number_field :received_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :received_by_me %>
+    <%= form.text_field :received_by_me %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_received %>
+    <%= form.check_box :is_received %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_sent %>
+    <%= form.check_box :is_sent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jump %>
+    <%= form.number_field :jump %>
+  </div>
+
+  <div class="field">
+    <%= form.label :destination_id %>
+    <%= form.number_field :destination_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :final_destination_id %>
+    <%= form.number_field :final_destination_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :manifest %>
+    <%= form.text_area :manifest %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

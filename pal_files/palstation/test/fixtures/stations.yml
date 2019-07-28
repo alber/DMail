@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  admin: MyString
+  location: MyString
+  lat: 1.5
+  long: 1.5
+  parent_id: 1
+  status: MyString
+  unconfirmed: 1
+  confirmed: 1
+  total: 1
+  is_docked: false
+  docked_id: 1
+  tier: 1
+  current_weatherscore: 1
+  is_me: false
+
+two:
+  name: MyString
+  admin: MyString
+  location: MyString
+  lat: 1.5
+  long: 1.5
+  parent_id: 1
+  status: MyString
+  unconfirmed: 1
+  confirmed: 1
+  total: 1
+  is_docked: false
+  docked_id: 1
+  tier: 1
+  current_weatherscore: 1
+  is_me: false

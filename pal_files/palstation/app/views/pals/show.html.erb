@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @pal.status %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @pal.location %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @pal.lat %>
+</p>
+
+<p>
+  <strong>Long:</strong>
+  <%= @pal.long %>
+</p>
+
+<p>
+  <strong>Payload:</strong>
+  <%= @pal.payload %>
+</p>
+
+<p>
+  <strong>Flightplan:</strong>
+  <%= @pal.flightplan %>
+</p>
+
+<%= link_to 'Edit', edit_pal_path(@pal) %> |
+<%= link_to 'Back', pals_path %>

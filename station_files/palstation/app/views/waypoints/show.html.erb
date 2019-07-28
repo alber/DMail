@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @waypoint.lat %>
+</p>
+
+<p>
+  <strong>Long:</strong>
+  <%= @waypoint.long %>
+</p>
+
+<p>
+  <strong>Step:</strong>
+  <%= @waypoint.step %>
+</p>
+
+<p>
+  <strong>Flightplan:</strong>
+  <%= @waypoint.flightplan %>
+</p>
+
+<%= link_to 'Edit', edit_waypoint_path(@waypoint) %> |
+<%= link_to 'Back', waypoints_path %>

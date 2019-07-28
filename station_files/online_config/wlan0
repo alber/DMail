@@ -1,0 +1,5 @@
+auto wlan0
+iface wlan0 inet manual
+    wireless-channel 7
+    wireless-essid palnet-palsta1
+    wireless-mode ad-hoc

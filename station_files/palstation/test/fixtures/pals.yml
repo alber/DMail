@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  location: MyString
+  lat: 1.5
+  long: 1.5
+  payload: one
+  flightplan: one
+
+two:
+  status: MyString
+  location: MyString
+  lat: 1.5
+  long: 1.5
+  payload: two
+  flightplan: two

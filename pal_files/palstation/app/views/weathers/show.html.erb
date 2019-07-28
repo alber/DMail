@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Station:</strong>
+  <%= @weather.station %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @weather.score %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @weather.description %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @weather.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_weather_path(@weather) %> |
+<%= link_to 'Back', weathers_path %>
