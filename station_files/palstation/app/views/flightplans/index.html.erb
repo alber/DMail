@@ -9,8 +9,9 @@
       <th>Updated by</th>
       <th>Updated by me</th>
       <th>Waypoint count</th>
-      <th>Last waypoint</th>
       <th>Step waypoint</th>
+      <th>Weather Score</th>
+      <th>Weather Pass</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,8 +23,9 @@
         <td><%= flightplan.updated_by %></td>
         <td><%= flightplan.updated_by_me %></td>
         <td><%= flightplan.waypoint_count %></td>
-        <td><%= flightplan.last_waypoint %></td>
         <td><%= flightplan.step_waypoint %></td>
+        <td><%= flightplan.weather_score %></td>
+        <td><%= flightplan.weather_pass %></td>
         <td><%= link_to 'Show', flightplan %></td>
         <td><%= link_to 'Edit', edit_flightplan_path(flightplan) %></td>
         <td><%= link_to 'Destroy', flightplan, method: :delete, data: { confirm: 'Are you sure?' } %></td>

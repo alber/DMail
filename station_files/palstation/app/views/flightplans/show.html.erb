@@ -21,13 +21,19 @@
 </p>
 
 <p>
-  <strong>Last waypoint:</strong>
-  <%= @flightplan.last_waypoint %>
+  <strong>Step waypoint:</strong>
+  <%= @flightplan.step_waypoint %>
 </p>
 
 <p>
-  <strong>Step waypoint:</strong>
-  <%= @flightplan.step_waypoint %>
+  <strong>Weather Score:</strong>
+  <%= @flightplan.weather_score %> <br/>
+  (<span><i> <%= @flightplan.waypoint_count.to_f %> or less is better. </i></span>)
+</p>
+
+<p>
+  <strong>Weather Pass:</strong>
+  <%= @flightplan.weather_pass %>
 </p>
 
 <%= link_to 'Edit', edit_flightplan_path(@flightplan) %> |

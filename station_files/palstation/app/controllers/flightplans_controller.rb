@@ -69,6 +69,6 @@ class FlightplansController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def flightplan_params
-      params.require(:flightplan).permit(:updated_at, :updated_by, :updated_by_me, :waypoint_count, :last_waypoint, :step_waypoint)
+      params.require(:flightplan).permit(:updated_at, :updated_by, :updated_by_me, :waypoint_count, :last_waypoint, :step_waypoint, :weather_score, :weather_pass)
     end
 end
