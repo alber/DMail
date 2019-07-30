@@ -16,3 +16,6 @@ Drone Mail - 21st Century Carrier Pigeon Protocol. A first implementation using 
 1. Be sure to run all migrations (rake db:migrate) so that your app is functional... and then 
 1. Hit those local addresses, Station default 192.168.199.1 to start creating and sending those Messages.
 
+![Proposed State Machine: Pal Carrier UAV](https://drive.google.com/open?id=1Pu8oTEWXuHtDFviogQzbBGlWF_Sephfo)
+![Proposed State Machine Station](https://drive.google.com/open?id=1C3wiFHFfGfmr3K-rVR9Mvo4SAPK7cgHo)
+![Data Flow Diagram](https://drive.google.com/open?id=1Ddb5E3ziwPrZdD8yGa0CVGDNmW0r5BrD)
